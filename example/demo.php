@@ -1,10 +1,10 @@
-PHP - Zip online file
-=================
-## 简介
-打包在线文件为Zip
+<?php
+/**
+ * @author lurrpis
+ * @date 15/8/29 下午9:51
+ * @blog http://lurrpis.com
+ */
 
-## 使用方法
-```php
 require_once '../source/Zip.class.php';
 
 $zip = new Zip('DEMO_PKG');
@@ -27,4 +27,5 @@ $data = array(
 
 $zip->zip($data);
 $zip->download();
-```
+
+?>
