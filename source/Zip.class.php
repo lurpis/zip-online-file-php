@@ -7,7 +7,6 @@
  */
 class Zip
 {
-
     /**
      * Temp root path
      *
@@ -595,6 +594,13 @@ class Zip
         return $this;
     }
 
+    /**
+     * Create http download header
+     *
+     * @param $filename
+     * @param $data
+     * @param $set_mime
+     */
     public function force_download($filename = '', $data = '', $set_mime = FALSE)
     {
         if ($filename === '' OR $data === '') {
@@ -681,5 +687,4 @@ class Zip
         fclose($fp);
         exit;
     }
-
 }
