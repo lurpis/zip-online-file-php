@@ -594,6 +594,8 @@ class Zip
         return $this;
     }
 
+    // --------------------------------------------------------------------
+
     /**
      * Create http download header
      *
