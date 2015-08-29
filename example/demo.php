@@ -7,7 +7,7 @@
 
 require_once '../source/Zip.class.php';
 
-$zip = new Zip('DEMO_PKG');
+$demo_package = new Zip('demo_package');
 $data = array(
 	array(
 		'url'=>'http://static.blog.lurrpis.com/logo/500x500.png',
@@ -25,7 +25,7 @@ $data = array(
 		)
 	);
 
-$zip->zip($data);
-$zip->download();
+$demo_package->zip($data);
+$demo_package->download();
 
 ?>
