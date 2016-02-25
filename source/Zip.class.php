@@ -94,10 +94,10 @@ class Zip
     public function __construct($pkgname = 'download')
     {
         $this->now = time();
-        $this->path = $_SERVER['DOCUMENT_ROOT'] . $this->path;
+        $this->path = __DIR__ . '/..' . $this->path;
         $this->pkgname = $pkgname;
         if (!is_dir($this->path)) {
-            if (!mkdir($this->path, 755, true)) {
+            if (!mkdir($this->path, 0755, true)) {
                 echo 'Create ' . $this->path . 'temp path filed, please create';
                 exit;
             }
